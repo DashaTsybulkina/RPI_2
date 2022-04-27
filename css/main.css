@@ -1,0 +1,123 @@
+
+
+body{
+    background: url(../andy-holmes-rCbdp8VCYhQ-unsplash.jpg);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+}
+
+.video{
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.card {
+  max-width: 500px;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+  box-shadow: 0px 0px 20px 2px #1479ca;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 25px;
+  background: #cacaca29;
+  color: white;
+  font-family: inherit;
+  font-size: 105%;
+  transition: 0.2s ease-in-out;
+}
+
+input.search-bar:hover{
+  background: #7c7c7c6b;
+}
+
+.title{
+  color: #EDEEF0;
+}
+
+.text{
+  color: #EDEEF0;
+  padding: 20px 20px;
+  text-align: justify;
+}
+
+.search {
+  display: flex;
+  width: 170%;
+  flex-direction: column;
+  padding-top: 170px;
+}
+
+.search_text{
+  color: #97a7c7;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.search_element{
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  margin: 0.5em;
+  border-radius: 30px;
+  border: none;
+  height: 28px;
+  width: 61px;
+  outline: none;
+  background: #7c7c7c2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background: #7c7c7c6b;
+}
+
+.container.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.container.loading:after {
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
